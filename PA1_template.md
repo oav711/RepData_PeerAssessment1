@@ -84,7 +84,7 @@ Calculate and report the mean and median total number of steps taken per day.
 ```r
 dsl <- melt(ds[,c(1,3,4)], id.vars="date")
 ggplot(data=dsl, aes(date, value, fill=variable, col=variable)) + geom_point() + geom_smooth() +
-    xlab("Steps") + ylab("Days") + ggtitle("Total number of steps taken each day")
+    xlab("Steps") + ylab("Days") + ggtitle("Mean and median number of steps taken each day")
 ```
 
 ```
@@ -154,7 +154,7 @@ Calculate and report the mean and median total number of steps taken per day.
 ```r
 dfl <- melt(df[,c(1,3,4)], id.vars="date")
 ggplot(data=dfl, aes(date, value, fill=variable, col=variable)) + geom_point() + geom_smooth() +
-    xlab("Steps") + ylab("Days") + ggtitle("Total number of steps taken each day")
+    xlab("Steps") + ylab("Days") + ggtitle("Mean and median number of steps taken each day")
 ```
 
 ```
